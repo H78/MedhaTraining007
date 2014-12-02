@@ -1,6 +1,6 @@
 #! /usr/bin/python
 
-# This code chagnes are to test Commit into Github 
+# This code finds bigger number from two given numbers 
 
 def getBignum():
     a=raw_input ("Please enter a number")
