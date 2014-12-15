@@ -1,0 +1,142 @@
+/*style applies to all pages */
+html{
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+}
+.headerstyle {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding:0,0,0,0;
+}
+.logoPlaceHolder{
+	height: 70px;
+	width:70px;
+	background-color: #EAEAEA;
+	float: left;
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	
+
+}
+.endHeader {
+	margin-top: 50px;
+	clear:both;
+	
+}
+.linkHolder{
+	height: 70px;
+	width: 100px;
+	float: right;
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	/*border-color: #888888;
+	border-style:solid;*/
+
+}
+.loginLinkStyle{
+	padding-top: 20px;
+	float:left;
+
+}
+.registerLinkStyle{
+	padding-top: 20px;
+	float:right;
+}
+body{
+
+	width:100%;
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    margin-right:0px;
+}
+.footerLink{
+
+	padding:10px;
+}
+.foot {
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-right: 10px;
+	float:right;
+
+}
+.innerpadding{
+	/*width:600px;*/
+	padding-top: 100px;
+}
+	
+#loginBox {
+	visibility: hidden;
+	width:300px;
+	height:315px;
+	background-color: #EAEAEA;
+	border-style: ridge;
+	/*border-color: #999999;*/
+	box-shadow: 6px 6px 3px #888888;
+	float: right;
+	margin-right: 250px;
+	margin-top:100px;
+	margin-bottom: 100px;
+
+
+}
+.loginElement{
+	margin-top: 25px;
+
+
+
+}	
+
+.video {
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+	float: left;
+	border-style: ridge;
+	box-shadow: 6px 6px 3px #888888;
+
+
+}
+
+.mainBox {
+	height: 85%;
+	
+    min-height: 580px;
+    overflow: hidden;
+    position: relative;
+    padding: 0,0,0,0;
+    margin:0,0,0,0;
+	/*width:600px;*/
+	float:center;
+	background-color: #EAEAEA;
+		
+}
+
+.dashboard{
+
+height:60%;
+width:60%;
+border-style:solid;
+border-color:#ffffff;
+clear:both;
+}
+
+.tabDiv{
+	margin-top: 100px;
+	width:60%;
+	height: 60%
+
+}
+#construction{
+	visibility: hidden;
+
+
+}
+#projList{
+	visibility: visible;
+}
