@@ -48,6 +48,9 @@ print "port: ",dbs
 
 tablepointer.execute("SELECT table_name, column_name, is_nullable, data_type, column_type, column_key, extra FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = N'profile'")
 schemas=tablepointer.fetchall()
+#tablepointer.execute("SELECT column_name FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = N'profile'")
+#one=tablepointer.fetchall()
+#print one
 #myschemas=numpy.asarray(schemas)
 #print schemas
 myDataList=["table_name","column_name","is_nullable","data_type","column_type","column_key","extra"]
@@ -165,7 +168,7 @@ for keys in serverData:
 tablepointer.execute("show global variables like 'port'")
 dbs=tablepointer.fetchall()
 print dbs
-#tablepointer.execute("show tables")
+#tablepointer.execute("show table_name")
 #tables=tablepointer.fetchall()
 #print tables
 #tablepointer.execute("select * from profile where name like 'Ryan'")
