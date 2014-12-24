@@ -1,0 +1,270 @@
+/*style applies to all pages */
+html{
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+}
+.headerstyle {
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding:0,0,0,0;
+}
+.logoPlaceHolder{
+	height: 70px;
+	width:70px;
+	background-color: #EAEAEA;
+	float: left;
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	
+
+}
+.endHeader {
+	margin-top: 50px;
+	clear:both;
+
+	
+}
+.title{
+	height: 70PX;
+	float: left;
+	margin-left: 38%;
+	padding-top: 0,0,0,0;
+}
+.linkHolder{
+	height: 70px;
+	width: 100px;
+	float: right;
+	margin: 0,0,0,0;
+	padding: 0,0,0,0;
+	/*border-color: #888888;
+	border-style:solid;*/
+
+}
+.loginLinkStyle{
+	padding-top: 20px;
+	float:left;
+
+}
+.registerLinkStyle{
+	padding-top: 20px;
+	float:right;
+}
+body{
+	font-size: 15px;
+	font-family: arial;
+	color: #666666;
+	width:100%;
+	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+    margin-right:0px;
+}
+.footerLink{
+
+	padding:10px;
+}
+.foot {
+	padding-left: 0px;
+	margin-left: 0px;
+	padding-right: 10px;
+	float:right;
+
+}
+.innerpadding{
+	/*width:600px;*/
+	padding-top: 25px;
+}
+	
+#loginBox {
+	display:none;
+	width:300px;
+	height:315px;
+	background-color: #EAEAEA;
+	/*border-style: ridge;
+	border-color: #999999;*/
+	box-shadow: 6px 6px 3px #888888;
+	float: right;
+	margin-right: 250px;
+	margin-top:100px;
+	margin-bottom: 100px;
+
+
+}
+#forgotPwdBox {
+	display:none;
+	width:300px;
+	height:315px;
+	background-color: #EAEAEA;
+	/*border-style: ridge;
+	border-color: #999999;*/
+	box-shadow: 6px 6px 3px #888888;
+	float: right;
+	margin-right: 250px;
+	margin-top:100px;
+	margin-bottom: 100px;
+
+
+}
+.loginElement{
+	margin-top: 25px;
+
+
+
+
+
+}	
+#username, #password{
+	margin-left: 10px;
+	margin-right: 25px;
+	float:right;
+	border:0px;
+}
+
+.video {
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+	margin-left: 250px;
+	float: left;
+	border-style: ridge;
+	box-shadow: 6px 6px 3px #888888;
+
+
+}
+
+.mainBox {
+	height: 85%;
+	
+    min-height: 580px;
+    overflow: hidden;
+    position: relative;
+    padding: 0,0,0,0;
+    margin:0,0,0,0;
+	/*width:600px;*/
+	float:center;
+	background-color: #EAEAEA;
+		
+}
+
+.dashboard{
+
+height:60%;
+width:60%;
+border-style:solid;
+border-color:#ffffff;
+clear:both;
+}
+
+.tabDiv{
+	margin-top: 100px;
+	width:60%;
+	height: 60%
+
+}
+#construction{
+	visibility: hidden;
+
+
+}
+#projList{
+	visibility: visible;
+}
+#registerBox {
+	
+	width:400px;
+	height:350px;
+	background-color: #EAEAEA;
+	float: center;
+	margin-top:0px;
+	margin-bottom: 100px;
+	/*border-style: ridge;
+	border-color: #999999;*/
+	
+
+
+}
+
+.rrElem{
+	float: left;
+	margin-left: 35px;
+	color: #666666;
+	/*padding-top: 25px;*/
+}
+.rlElem{
+	float: right;
+	margin-right: 70px;
+	color: #666666;
+}
+.rPwd{
+	float: left;
+	color: #999999;
+	margin-left: 35px;
+}
+.confPwd{
+	float: right;
+	color: #999999;
+	margin-left: 25px;
+	margin-right: 35px
+}
+.rElem{
+	margin-left: 25px;
+	float:left;
+}
+.registerInput{
+
+	clear: both;
+
+}
+select{
+	width:335px;
+	color: #999999;
+
+}
+.rEmail{
+	float:center;
+	width: 335px;
+	color: #999999;
+}
+.profileHolder{
+	clear: both;
+	margin-left: 25px;
+
+}
+.profileTitle{
+	float:left; 
+	width:100px;
+	margin-top: 25px;
+	
+}
+.profileInfo{
+	margin-top: 25px;
+	margin-left:40px;
+	float:left;
+
+}
+.profileBtn{
+	clear: both;
+	margin-top: 25px;
+	float: left;
+}
+#showQuestionBox{
+	display: none;
+}
+#showPwdBox{
+	display: none;
+}
+
+.errorMessage{
+	visibility:visible;
+	color:red;
+	font-size: 10px;
+	/*margin-left: 120px;*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom:0px;
+	padding-top: 0px;
+}
+
