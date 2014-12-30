@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		 
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="login.js"></script>
+		<title>Test Case Management</title>
+		 
+	</head>
+	<body style="font-family:arial; font-size:15px;  ">
+		<header id="header" class="headerstyle">
+			<div class="logoPlaceHolder">
+			</div>
+			<h2 align="center" class="title"> Test Case Management</h2>
+			<div class="linkHolder">
+				<div class="loginLinkStyle"><a href="#" onClick= "showProfileBox()">Profile</a>
+				</div>
+				<div class="registerLinkStyle"><a href="logIn.html">Sign Out</a>
+				</div>
+			</div>
+			<div class="endHeader"></div>
+		</header>
+		<div class="mainBox" align="center">
+			<h2> Profile</h2>
+			<div id="construction">Page Under Construction<a href="#"></a></div>
+			<div align="center" style="width:400px; height:500px;">
+				<div align="left" class="profileHolder">
+					<div class="profileTitle">Name: </div><div class="profileInfo">John Doe</div>
+				</div>
+				<div class="profileHolder" align="left">
+					<div class="profileTitle">Email:</div>
+					<div class="profileInfo"> somebody@someplace.com</div>
+				</div>
+				<div class="profileHolder" align="left">
+					<div class="profileTitle">Role:</div>
+					<div class="profileInfo">  Something Important</div>
+				</div>
+				<div class="profileHolder" align="left">
+					<div class="profileTitle">User ID: </div>
+					<div class="profileInfo">577645643</div>
+				</div>
+				
+				
+				<div class="profileHolder" style="padding-top:25px;">
+					
+						
+						<input id = "ChangePassword" type = "submit" formmethod= "post" value="Change Password" onClick= "showQuestionBox()" class="profileBtn"> </input>
+						
+				</div>
+
+				<div id="showQuestionBox">
+				<div class="loginElement">
+					<div class="rrElem" style="padding-top:25px;">Please select your security question and answer it.</div>
+				</div>
+				<div>
+
+				<SELECT id="selectQuestion" class="rPwd">
+					<option>Select Question</option>
+					<option>What was your first pet's name?</option>
+					<option>What is the name of your birth place?</option>
+					<option>What is your mother's maiden name?</option>
+				</SELECT>
+				</div>
+				<div class="loginElement">
+				<div class="rrElem" style="padding-top:25px;">Answer</div></div>
+				<div class="registerInput">
+					<input type = 'text' value="Anser a question" class="rEmail" > </input>
+				</div>
+				<div class="profileHolder">
+				<input id = "ChangePassword" type = "submit" formmethod= "post" value="Answer Security Question" onClick= "showPwdBox()" class="profileBtn"> </input>
+				</div>
+
+			</div>
+			<div id="showPwdBox">
+				<div class="loginElement">
+					<div class="rrElem" style="padding-top:25px;">Enter New Password</div>
+				</div>
+				<div class="registerInput">
+					<input type = 'text' value="New Password" class="rEmail" > </input>
+				</div>
+				<div class="loginElement">
+				<div class="rrElem">Confirm Password</div></div>
+				<div class="registerInput">
+					<input type = 'text' value="Confirm Password" class="rEmail" > </input>
+				</div>
+				<div class="profileHolder" style="padding-top:25px;">
+					
+						
+						<input id = "ChangePassword" type = "submit" formmethod= "post" value="Change Password" onClick= "showSuccessMessage()" class="profileBtn"> </input>
+						
+				</div>
+			</div>
+			<div id="showSuccessMessage">
+				<div class="loginElement">
+					<div class="rrElem"style="padding-top:25px; color:blue;">You have successfully changed your password.</div>
+				</div>
+			</div>
+				
+					
+				
+				
+
+			</div>
+		</div>
+
+
+
+
+
+			
+
+			
+		</div>
+		<footer>
+			<div class= "foot">
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">Contact Us</a>
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">About Us</a>
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">Help</a>
+		</div>
+		</footer>
+	
+
+
+
+
+	</body>
+</html>

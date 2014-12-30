@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="login.js"></script>
+		<title>Test Case Management</title>
+	</head>
+	<body>
+		<header id="header" class="headerstyle">
+			<div class="logoPlaceHolder">
+			</div>
+			<div class="linkHolder">
+				<div class="loginLinkStyle"><a href="#" onClick= "showLoginBox()">Login</a></div>
+				<!--<div class="registerLinkStyle"><a href="register.html">Register</a></div>-->
+			</div>
+			<div class="endHeader"></div>
+		</header>
+		<div class="mainBox" align="center">
+			<h2> Test Case Management</h2>
+			<div id= "construction"><h3>Page under construction</h3><a href="logIn.html">Back</a></div>
+			<div class="video" id="videoBox"> 
+				<!--<embed class="video" width="420" height="315"src="http://youtu.be/EpaLP3sc4qU">
+				<iframe width="420" height="315"src="https://www.youtube.com/watch?v=pxbdnrjf-Uc">
+				</iframe>--> 
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/veQ2ilQrzMU" frameborder="4" allowfullscreen></iframe>
+				
+			</div>
+			<div id="registerBox">
+				<div class="loginElement">
+				<div class="rrElem">Name</div></div>
+				<div class="registerInput">	
+					
+						<input class="rPwd" id= 'rName' type = 'text'value="Name"> </input>
+						<input class= "confPwd" id= 'rLastname'  type = 'text' value="Last Name"> </input>
+					
+				</div>
+				
+				<div class="loginElement">
+				<div class="rrElem">Email ID</div></div>
+				<div class="registerInput">
+					<input type = 'text' value="Email ID" class="rEmail" > </input>
+				</div>
+				
+				<div class="loginElement">
+					<div class="rrElem">Password</div>
+					<div class="rlElem">Confirm Password</div>
+				</div>
+				<div>
+					<input id = 'rpassword' type = 'password' class="rPwd"> </input>
+					<input id= 'confirmPassword' type = 'password' class="confPwd"> </input>
+				</div>
+				<div>
+					<input id = "register" class="loginElement" type = "submit" formmethod= "post" value="Register" onClick= "getDashboard()"> </input>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			<div class= "foot">
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">Contact Us</a>
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">About Us</a>
+			<a href="#" class="footerLink" onClick="getFooterMenuPage()">Help</a>
+		</div>
+		</footer>
+	
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,58 @@
+Create DATABASE framework;
+
+Show DATABASES;
+
+Use framework;
+
+
+Create TABLE UserProfile(UserId varchar(150),UserName VARCHAR(150)NOT NULL,
+FirstName VARCHAR(200)NOT NULL,
+                          LastName VARCHAR(200)NOT NULL,
+                          UserPassword VARCHAR(150)NOT NULL,
+ EmailID VARCHAR(150)NOT NULL UNIQUE,
+                          Role VARCHAR(50)NOT NULL,
+Quest VARCHAR(250)NOT NULL,    
+Ans VARCHAR(150)NOT NULL,
+                          PRIMARY KEY(UserId));
+                          
+Create TABLE UserLogin(UserId varchar(150)NOT NULL UNIQUE,
+UserName VARCHAR(150)NOT NULL,
+                       UserPassword VARCHAR(150) NOT NULL,
+Session_auth_token VARCHAR(150)NOT NULL UNIQUE,
+                       Login_time VARCHAR(10)NOT NULL,
+                       Lastlogin_time VARCHAR(10)NOT NULL,PRIMARY KEY(UserId),
+                       FOREIGN KEY(UserId) REFERENCES UserProfile(UserId));
+                          
+Create TABLE Project_table(ProjectId VARCHAR(20),ProjectName VARCHAR(20),
+UserId varchar(20),
+                           PRIMARY KEY(ProjectId,UserId),
+FOREIGN KEY(UserId) REFERENCES UserProfile(UserId));
+                           
+Create TABLE Testplan_table(TestPlanId VARCHAR(20),ProjectId VARCHAR(20,
+Testplan_Created_Time VARCHAR(10),
+                               PRIMARY KEY(TestPlanId),
+FOREIGN KEY(ProjectId) REFERENCES Project_table(ProjectId)); 
+                           
+
+Create TABLE Testcase_table(TestCaseID VARCHAR(50),
+Script_locationVARCHAR(250),TestCaseCreated VARCHAR(50),
+                          TestCaseModified VARCHAR(50),last_ran VARCHAR(50),
+Testcase_status VARCHAR(50),TestPlanID VARCHAR(50),
+                            PRIMARY KEY(TestCaseId),
+FOREIGN KEY(TestPlanID) REFERENCES Testplan_table(TestPlanID));
+                            
+Create TABLE TestRun_table(TestCaseID VARCHAR(50),ScriptLocation VARCHAR(250),
+Num_timesRan VARCHAR(50), DefectsID VARCHAR(50),
+Testcase_Status VARCHAR(50), PRIMARY KEY(DefectsID),
+FOREIGN KEY(TestCaseID) REFERENCES Testcase_table(TestCaseID));
+
+Create TABLE Defect_table(DefectsId VARCHAR(50),Loglocation VARCHAR(250),
+TestcaseID VARCHAR(50),DefectStatus VARCHAR(50),
+                            PRIMARY KEY(TestcaseID),
+FOREIGN KEY(DefectsId) REFERENCES TestRun_table(DefectsID));
+
+Show TABLES;
+
+desc userprofile;
+
+commit;
